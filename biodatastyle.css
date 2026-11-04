@@ -1,0 +1,333 @@
+body{
+    background-image: url(picnic\ background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    background-color:hotpink;
+    color:blanchedalmond;
+    text-align: center;
+    width: 800px;
+}
+div.biodata{
+    margin: 30px auto;
+    width: 70%;
+    background-color:darksalmon;
+    color:maroon;
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:60px;
+}
+div.foto{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid cornflowerblue;
+}
+div.foto img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+div.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+div.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+div.foto img.buttom{
+    opacity: 0;
+    z-index: 1;
+}
+div.foto:hover img.buttom{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+h2{
+    background-color:midnightblue ;
+    color:darkturquoise;
+    text-align: center;
+    width: 1250px;
+    font-size: 20pt;
+}
+
+div.Makanan{
+    text-align: center;
+    display: flex;
+    gap: 80px;
+    text-align: center;
+}
+img{
+    padding: 15px;
+}
+div.kentang{
+    width:250px;
+    height:330px;
+    border-radius: 15px;
+    background-color:antiquewhite;
+    box-shadow: 0 4px 8px 0 rosybrown(5, 134, 5);
+    margin-bottom: 25px;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 15pt;
+}
+div.kentang:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.mie{
+    width:250px;
+    height:330px;
+    border-radius: 15px;
+    background-color:rgb(214, 165, 100);
+    box-shadow: 0 4px 8px 0 rosybrown(5, 134, 5);
+    margin-bottom: 25px;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 15pt;
+}
+div.mie:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.steak{
+    width:250px;
+    height:330px;
+    border-radius: 15px;
+    background-color:antiquewhite;
+    box-shadow: 0 4px 8px 0 rosybrown(5, 134, 5);
+    margin-bottom: 25px;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 15pt;
+}
+div.steak:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.cimol{
+    width:250px;
+    height:330px;
+    border-radius: 15px;
+    background-color:rgb(224, 173, 110);
+    box-shadow: 0 4px 8px 0 rosybrown(5, 134, 5);
+    margin-bottom: 25px;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 15pt;
+}
+div.cimol:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+h3{
+    background-color:maroon;
+    color:blanchedalmond;
+    text-align: center;
+    width: 1250px;
+    font-size: 20pt;
+}
+div.Negara{
+text-align: center;
+display: flex;
+gap: 80px;
+}
+
+img{
+padding: 15px;
+}
+
+div.Taiwan{
+    width:250px;
+    height:330px;
+    border-radius: 15px;
+    background-color:rgb(224, 173, 110);
+    box-shadow: 0 4px 8px 0 rosybrown(5, 134, 5);
+    margin-bottom: 25px;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 20pt;
+}
+div.Taiwan:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.Jepang{
+    width:250px;
+    height:330px;
+    border-radius: 15px;
+    background-color:antiquewhite;
+    box-shadow: 0 4px 8px 0 rosybrown(5, 134, 5);
+    margin-bottom: 25px;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 20pt;
+}
+div.Jepang:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.Switzerland{
+    width:250px;
+    height:330px;
+    border-radius: 15px;
+    background-color:rgb(224, 173, 110);
+    box-shadow: 0 4px 8px 0 rosybrown(5, 134, 5);
+    margin-bottom: 25px;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 20pt;
+}
+div.Switzerland:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.Korea{
+    width:250px;
+    height:330px;
+    border-radius: 15px;
+    background-color:antiquewhite;
+    box-shadow: 0 4px 8px 0 rosybrown(5, 134, 5);
+    margin-bottom: 25px;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 20pt;
+}
+div.Korea:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+h3{
+    background-color:maroon;
+    color:blanchedalmond;
+    text-align: center;
+    width: 1250px;
+    font-size: 20pt;
+}
+
+h4{
+    background-color:maroon;
+    color:blanchedalmond;
+    text-align: center;
+    width: 1250px;
+    font-size: 20pt;
+}
+div.Film{
+text-align: center;
+display: flex;
+gap: 80px;
+}
+
+img{
+padding: 15px;
+}
+
+div.Conjur{
+    width:250px;
+    height:370px;
+    border-radius: 15px;
+    background-color:antiquewhite;
+    box-shadow: 0 4px 8px 0 rosybrown(5, 134, 5);
+    margin-bottom: 25px;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 20pt;
+}
+div.Conjur:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.Harpot{
+    width:250px;
+    height:370px;
+    border-radius: 15px;
+    background-color:rgb(224, 173, 110);
+    box-shadow: 0 4px 8px 0 rosybrown(5, 134, 5);
+    margin-bottom: 25px;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 20pt;
+}
+div.Harpot:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.Avatar{
+    width:250px;
+    height:370px;
+    border-radius: 15px;
+    background-color:antiquewhite;
+    box-shadow: 0 4px 8px 0 rosybrown(5, 134, 5);
+    margin-bottom: 25px;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 20pt;
+}
+div.Avatar:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.Rings{
+    width:250px;
+    height:370px;
+    border-radius: 15px;
+    background-color:rgb(224, 173, 110);
+    box-shadow: 0 4px 8px 0 rosybrown(5, 134, 5);
+    margin-bottom: 25px;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 20pt;
+}
+div.Rings:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+@font-face {
+    font-family: "heycomic";
+    src: url(hey_comic/Hey\ Comic.otf);
+}
