@@ -1,0 +1,572 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background-color: #f5ead7;
+    color: #5b3024;
+}
+
+.header {
+    min-height: 200px;
+
+    background:
+        linear-gradient(
+            rgba(64, 35, 24, 0.48),
+            rgba(64, 35, 24, 0.62)
+        ),
+        url("batikindo.jpg");
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.header-content {
+    max-width: 450px;
+    color: white;
+}
+
+.small-title {
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(55px, 8vw, 100px);
+    line-height: 1;
+    margin-bottom: 25px;
+    transition: all 0.4s ease;
+}
+
+.header h1:hover {
+    color: #e8b85c;
+    transform: scale(1.06);
+    cursor: pointer;
+}
+
+.header-description {
+    font-size: 16px;
+    margin-bottom: 35px;
+    letter-spacing: 0.5px;
+}
+
+.header-button {
+    display: inline-block;
+    padding: 13px 27px;
+    border: 1px solid white;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+.header-button:hover {
+    background-color: #e8b85c;
+    border-color: #e8b85c;
+    color: #4b291f;
+
+    transform: translateY(-4px);
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-heading p {
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: #a45d38;
+    margin-bottom: 8px;
+}
+
+.section-heading h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    color: #5b3024;
+}
+
+.tentang-batik {
+    padding: 80px 7%;
+}
+
+.intro-content {
+    max-width: 1100px;
+    margin: 0 auto 65px;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.intro-image {
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow:
+        0 10px 25px rgba(61, 38, 24, 0.2);
+}
+
+.intro-image img {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    display: block;
+    transition: all 0.6s ease;
+}
+
+.intro-image img.batikindo {
+    height: 850px;
+}
+
+.intro-image:hover img {
+    transform: scale(1.08);
+    filter: brightness(1.08);
+}
+
+.intro-image:hover {
+    box-shadow:
+        0 18px 40px rgba(61, 38, 24, 0.35);
+}
+
+.intro-text p {
+    font-size: 14px;
+    line-height: 1.9;
+    text-align: justify;
+    text-indent: 40px;
+    margin-bottom: 18px;
+    color: #66574d;
+}
+
+.intro-text p {
+    text-align: justify;
+    text-indent: 40px;
+    line-height: 1.9;
+    background-color: rgba(91, 48, 36, 0.92);
+    color: #f5ead7;
+    padding: 20px 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.intro-text p:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.intro-text p:active {
+    transform: scale(0.97);
+}
+
+.second-content {
+    grid-template-columns: 1.1fr 0.9fr;
+    margin-bottom: 0;
+}
+
+.tahukah-kamu {
+    padding: 30px 7% 65px;
+    background-color: #f5ead7;
+    text-align: center;
+}
+
+.tahukah-kamu .section-heading {
+    margin-bottom: 40px;
+}
+
+.fakta-container {
+    max-width: 1050px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.fakta-box {
+    background-color: #fffaf0;
+    padding: 30px 25px;
+    border: 2px solid #c8a77b;
+    border-radius: 14px;
+    text-align: left;
+    transition: all 0.4s ease;
+}
+
+.fakta-box span {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-size: 38px;
+    color: #c99745;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.fakta-box h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 23px;
+    color: #6b3828;
+    margin-bottom: 12px;
+}
+
+.fakta-box p {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #66574d;
+}
+
+.fakta-box:hover {
+    transform: translateY(-8px);
+    border-color: #a56b45;
+    box-shadow:
+        0 12px 25px rgba(61, 38, 24, 0.18);
+}
+
+.batik-carousel {
+    width: 92%;
+    margin: 10px auto 70px;
+    padding: 65px 0;
+    background-color: #d9c8a9;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow:
+        0 8px 20px rgba(61, 38, 24, 0.13);
+}
+
+.carousel-title {
+    padding: 0 20px;
+    margin-bottom: 35px;
+}
+
+.carousel-title p {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #a45d38;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.carousel-title h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 38px;
+    color: #5b3024;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 15px 0 25px;
+}
+
+.carousel-track {
+    display: flex;
+    width: max-content;
+    animation:
+        infiniteBatik 25s linear infinite;
+}
+
+.batik-group {
+    display: flex;
+    gap: 25px;
+    flex-shrink: 0;
+    padding-right: 25px;
+}
+
+.batik-card {
+    width: 270px;
+    height: 330px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #fffaf0;
+    border: 4px solid #a56b45;
+    box-shadow:
+        0 6px 15px rgba(61, 38, 24, 0.25);
+    flex-shrink: 0;
+    transition: all 0.4s ease;
+}
+
+.batik-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: all 0.6s ease;
+}
+
+.batik-card::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 55%;
+    background:
+        linear-gradient(
+            transparent,
+            rgba(45, 25, 17, 0.85)
+        );
+}
+
+.batik-card:hover {
+    transform: translateY(-12px) scale(1.03);
+    border-color: #c99745;
+    box-shadow:
+        0 18px 35px rgba(61, 38, 24, 0.4);
+    cursor: pointer;
+}
+
+.batik-card:hover img {
+    transform: scale(1.12);
+    filter: brightness(1.08);
+}
+
+.batik-info {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2;
+    text-align: left;
+    color: white;
+}
+
+.batik-info h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 23px;
+    margin-bottom: 4px;
+}
+
+.batik-info p {
+    font-size: 12px;
+    color: #f0c56e;
+    letter-spacing: 1px;
+}
+
+@keyframes infiniteBatik {
+
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.carousel-dots span {
+    width: 8px;
+    height: 8px;
+    background-color: #a56b45;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.carousel-dots span:hover {
+    background-color: #5b3024;
+    transform: scale(1.5);
+}
+
+.penutup-batik {
+    max-width: 1100px;
+    margin: 0 auto 70px;
+    padding: 55px 65px;
+    background-color: #fffaf0;
+    border-left: 7px solid #a56b45;
+    border-right: 7px solid #a56b45;
+    box-shadow:
+        0 8px 25px rgba(61, 38, 24, 0.12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.penutup-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #a45d38;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.penutup-batik h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 38px;
+    line-height: 1.2;
+    color: #5b3024;
+    margin-bottom: 20px;
+}
+
+.penutup-batik h2 span {
+    color: #a45d38;
+    font-style: italic;
+}
+
+.penutup-paragraf {
+    max-width: 650px;
+    font-size: 14px;
+    color: #66574d;
+    line-height: 1.9;
+    text-align: justify;
+    text-indent: 35px;
+}
+
+.penutup-kecil {
+    min-width: 190px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.penutup-kecil span {
+    padding: 12px 18px;
+    border: 1px solid #b27b45;
+    color: #6b3828;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.penutup-kecil span:hover {
+    background-color: #a56b45;
+    color: white;
+    transform: translateX(8px);
+}
+
+.kotak-akhir {
+    padding: 70px 20px;
+    background-color: #5b3024;
+    text-align: center;
+    color: white;
+}
+
+.kotak-akhir > p:first-child {
+    font-size: 22px;
+    color: #e1ae52;
+    margin-bottom: 15px;
+}
+
+.kotak-akhir h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    margin-bottom: 15px;
+    transition: all 0.4s ease;
+}
+
+.kotak-akhir h2:hover {
+    color: #e8b85c;
+    transform: scale(1.04);
+}
+
+.kotak-akhir > p:last-child {
+    font-size: 14px;
+    color: #eadbc5;
+}
+
+footer {
+    padding: 25px;
+    background-color: #3d2119;
+    text-align: center;
+    color: #eadbc5;
+}
+
+footer p {
+    font-family: "Playfair Display", serif;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+footer span {
+    font-size: 11px;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+
+    .intro-content,
+    .second-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+    .second-content .intro-image {
+        order: -1;
+    }
+    .fakta-container {
+        grid-template-columns: 1fr;
+    }
+    .penutup-batik {
+        width: 90%;
+        padding: 40px 30px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .penutup-kecil {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .header {
+        min-height: 550px;
+    }
+    .header h1 {
+        font-size: 55px;
+    }
+    .section-heading h2 {
+        font-size: 32px;
+    }
+    .tentang-batik {
+        padding: 60px 6%;
+    }
+    .intro-image img {
+        height: 320px;
+    }
+    .batik-carousel {
+        width: 94%;
+        padding: 50px 0;
+    }
+    .carousel-title h2 {
+        font-size: 30px;
+    }
+    .batik-card {
+        width: 235px;
+        height: 300px;
+    }
+    .penutup-batik h2 {
+        font-size: 30px;
+    }
+    .kotak-akhir h2 {
+        font-size: 32px;
+    }
+
+}
